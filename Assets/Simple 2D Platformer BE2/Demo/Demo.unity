@@ -133,9 +133,9 @@ GameObject:
   - component: {fileID: 519331496}
   - component: {fileID: 519331500}
   - component: {fileID: 519331501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy_0
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ Transform:
   m_GameObject: {fileID: 519331495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.987, y: -0.492, z: 0}
+  m_LocalPosition: {x: -2.8, y: -0.54, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -409,7 +409,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -911,9 +911,9 @@ GameObject:
   - component: {fileID: 1057815703}
   - component: {fileID: 1057815705}
   - component: {fileID: 1057815704}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1008,7 +1008,7 @@ Transform:
   m_GameObject: {fileID: 1057815697}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.93, y: 0.63, z: 1}
+  m_LocalPosition: {x: -5.7, y: -0.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1114,9 +1114,9 @@ GameObject:
   - component: {fileID: 1363576162}
   - component: {fileID: 1363576161}
   - component: {fileID: 1363576160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spike
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

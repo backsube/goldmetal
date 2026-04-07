@@ -1,3 +1,6 @@
+using System.Drawing;
+using System.Dynamic;
+using System.Threading.Tasks.Dataflow;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -59,5 +62,31 @@ public class PlayerMove : MonoBehaviour
                 
             }
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gmaeObject.tag == "eneny")
+        {
+            OnDamaged(collision.transform.position);
+        }
+    }
+    void OnDamageda(Vector2 targetPos)
+    {
+        gameObject.layer = 9;
+
+        spriteRenderer.color = new Color(1,1,1,0.4f);
+        int dirc = TransformBlock.position.x-targetPos.X > 0?1:-1;
+        rigid.AddForce(new Vector2(dirc,1)*7, ForceMode2D.Impulse);
+
+        anim.SetTrigger("hit");
+
+        Invoke("offDamaged",3);
+    }
+
+    void offDamaged()
+    {
+        gameObject.layer = 7;
+        spriteRenderer.color = new Color(1,1,1,1);
     }
 }
